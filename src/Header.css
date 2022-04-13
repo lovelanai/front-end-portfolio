@@ -1,11 +1,11 @@
 .headerContainer {
   position: fixed;
-  background-color: green;
+
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  z-index: 3;
   height: 6rem;
 }
 
@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: red;
+
   max-width: 1200px;
   min-width: 75%;
 }
@@ -24,7 +24,7 @@
   border: none;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
-  font-size: 15px;
+  font-size: 20px;
   color: #efefef;
 }
 

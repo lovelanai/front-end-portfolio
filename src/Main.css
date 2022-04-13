@@ -1,15 +1,24 @@
 .mainContainer {
   height: 100vh;
-  background-color: pink;
+  background-color: #01354f;
   display: flex;
   justify-content: center;
 }
 
 .nameContent {
-  background-color: black;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 9rem;
   height: 40rem;
   max-width: 1200px;
   min-width: 75%;
+  color: white;
+}
+
+.nameContent div {
+  margin: 4rem;
+  font-size: 2rem;
 }
 
 .particlesLayout {

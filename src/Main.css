@@ -1,0 +1,17 @@
+.mainContainer {
+  height: 100vh;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+}
+
+.nameContent {
+  background-color: black;
+  height: 40rem;
+  max-width: 1200px;
+  min-width: 75%;
+}
+
+.particlesLayout {
+  z-index: 1;
+}

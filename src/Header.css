@@ -1,0 +1,33 @@
+.headerContainer {
+  position: fixed;
+  background-color: green;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 6rem;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: red;
+  max-width: 1200px;
+  min-width: 75%;
+}
+
+.headerContent button {
+  margin: 0 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  font-size: 15px;
+  color: #efefef;
+}
+
+.headerContent button:hover {
+  transform: scale(1.1);
+}

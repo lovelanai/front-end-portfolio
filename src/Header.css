@@ -15,12 +15,8 @@
   justify-content: space-between;
   max-width: 1200px;
   min-width: 75%;
-  background-color: rgba(0, 0, 0, 0);
-  height: 100%;
-}
-
-.headerTransparent {
   background-color: transparent;
+  height: 100%;
 }
 
 .headerDark {
@@ -52,14 +48,5 @@
 
   100% {
     background-color: rgb(0, 0, 0);
-  }
-}
-
-@keyframes transparent {
-  0% {
-    background-color: rgb(0, 0, 0);
-  }
-  100% {
-    background-color: rgba(0, 0, 0, 0);
   }
 }

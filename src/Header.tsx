@@ -1,35 +1,39 @@
+import { useState, useEffect } from "react";
 import "./Header.css";
-import { useState } from "react";
-import { start } from "repl";
-import { url } from "inspector";
 
 export default function Header() {
-  const [style, setStyle] = useState("headerContent");
+  const [header, setHeader] = useState("headerContent");
 
-  const changeStyle = () => {
-    console.log("you clicked");
+  const height = window.innerHeight - 5;
 
-    setStyle("headerContent headerDark");
+  const listenScrollEvent = () => {
+    if (window.scrollY < height) {
+      return setHeader("headerContent");
+    } else if (window.scrollY > height) {
+      return setHeader("headerContent headerDark");
+    }
   };
 
-  const revertChangeStyle = () => {
-    setStyle("headerContent headerTransparent");
-  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+
+    return () => window.removeEventListener("scroll", listenScrollEvent);
+  }, []);
 
   return (
     <div className="headerContainer">
-      <div className={style}>
+      <div id="headerColors" className={header}>
         <div>
-          <button onClick={revertChangeStyle}>
+          <button>
             <a href="#start">Logo</a>
           </button>
         </div>
         <div>
           <ul>
-            <button onClick={revertChangeStyle}>
+            <button>
               <a href="#start">Home</a>
             </button>
-            <button onClick={changeStyle}>
+            <button>
               <a href="#about">About</a>
             </button>
             <button>

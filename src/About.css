@@ -1,4 +1,68 @@
 .aboutContainer {
   height: 100vh;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutContent {
+  height: 35rem;
+  width: 65rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutContent .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left div {
+  box-shadow: 3px 3px 1px #ccc;
+  -webkit-box-shadow: 3px 3px 1px #ccc;
+  -moz-box-shadow: 3px 3px 1px #ccc;
+  background-image: url("https://i.kym-cdn.com/photos/images/original/001/516/899/f31.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutContent .right {
+  width: 50%;
+  display: flex;
+
+  align-items: center;
+}
+
+.right div {
+  height: 25rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.right section {
+  padding: 1rem 4rem;
+}
+
+.cvButton {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  letter-spacing: 0.2rem;
+  border: 1px solid black;
+  min-height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

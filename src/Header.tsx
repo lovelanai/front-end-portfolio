@@ -5,7 +5,7 @@ import "./Header.css";
 export default function Header() {
   const [header, setHeader] = useState("headerContent");
 
-  const height = window.innerHeight - 5;
+  const height = window.innerHeight - 280;
 
   const listenScrollEvent = () => {
     if (window.scrollY < height) {

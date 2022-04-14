@@ -8,17 +8,14 @@
 .nameContent {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 9rem;
-  height: 40rem;
   max-width: 1200px;
   min-width: 75%;
   color: white;
+  background-color: black;
 }
 
 .nameContent div {
   margin: 4rem;
-  font-size: 2rem;
 }
 
 .particlesLayout {

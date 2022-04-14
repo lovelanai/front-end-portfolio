@@ -1,14 +1,14 @@
 import ParticlesBg from "particles-bg";
 
 import "./Main.css";
+import TextAnimation from "./TextAnimation";
 
 export default function Main() {
   return (
     <div className="mainContainer">
       <div className="nameContent">
         <div>
-          <h1>Love Lanai</h1>
-          <h2>Front End Developer</h2>
+          <TextAnimation />
         </div>
       </div>
       <div className="particlesLayout">

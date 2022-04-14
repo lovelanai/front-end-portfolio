@@ -5,14 +5,24 @@ export default function Header() {
     <div className="headerContainer">
       <div className="headerContent">
         <div>
-          <button>Logo</button>
+          <button>
+            <a href="#start">Logo</a>
+          </button>
         </div>
         <div>
           <ul>
-            <button>Home</button>
-            <button>About</button>
-            <button>Portfolio</button>
-            <button>Contact</button>
+            <button>
+              <a href="#start">Home</a>
+            </button>
+            <button>
+              <a href="#about">About</a>
+            </button>
+            <button>
+              <a href="#portfolio">Portfolio</a>
+            </button>
+            <button>
+              <a href="#contact">Contact</a>
+            </button>
           </ul>
         </div>
       </div>

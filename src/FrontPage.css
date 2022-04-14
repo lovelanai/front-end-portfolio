@@ -1,0 +1,55 @@
+.frontPageContainer {
+  height: 100vh;
+  background-color: #01354f;
+  display: flex;
+  justify-content: center;
+}
+
+.nameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1200px;
+  min-width: 75%;
+  color: white;
+  letter-spacing: 0.2rem;
+
+  z-index: 9;
+}
+
+.nameContent span {
+  -webkit-text-stroke: 2px #fff;
+  font-size: 5rem;
+  color: transparent;
+  font-weight: 800;
+}
+
+.nameContent button {
+  font-size: 1.5rem;
+  background: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  border: 1px solid #efefef;
+  margin: 2rem 0;
+  color: #efefef;
+  min-width: 13rem;
+  letter-spacing: 0.2rem;
+  min-height: 4rem;
+}
+
+.nameContent button:hover {
+  transform: scale(1.1);
+}
+
+.location {
+  display: flex;
+}
+
+.nameContent .icon {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.particlesLayout {
+  z-index: 1;
+}

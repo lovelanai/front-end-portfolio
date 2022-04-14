@@ -1,7 +1,7 @@
 import React, { Component, CSSProperties } from "react";
 import ReactTextTransition, { presets } from "react-text-transition";
 
-const texts = ["Front end developer", "Scalable", "Potato"];
+const texts = ["Front end developer", "Digital Designer", "Musician"];
 
 class TextAnimation extends Component {
   state = {
@@ -27,7 +27,7 @@ class TextAnimation extends Component {
       <React.Fragment>
         <section>
           <ReactTextTransition
-            style={{ fontSize: "3rem" }}
+            style={{ fontSize: "4.5rem", fontWeight: "800" }}
             text={texts[this.state.textIndex % texts.length]}
             springConfig={presets.wobbly}
             inline

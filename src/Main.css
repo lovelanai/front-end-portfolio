@@ -4,20 +4,3 @@
   display: flex;
   justify-content: center;
 }
-
-.nameContent {
-  display: flex;
-  align-items: center;
-  max-width: 1200px;
-  min-width: 75%;
-  color: white;
-  background-color: black;
-}
-
-.nameContent div {
-  margin: 4rem;
-}
-
-.particlesLayout {
-  z-index: 1;
-}

@@ -1,4 +1,4 @@
-import React, { Component, CSSProperties } from "react";
+import React, { Component } from "react";
 import ReactTextTransition, { presets } from "react-text-transition";
 
 const texts = ["Front end developer", "Digital Designer", "Musician"];

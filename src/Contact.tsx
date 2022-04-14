@@ -1,9 +1,11 @@
+import { Element } from "react-scroll";
 import "./Contact.css";
-
 export default function Contact() {
   return (
-    <div className="contactContainer" id="contact">
-      <h1>Contact</h1>
-    </div>
+    <Element name="Contact">
+      <div className="contactContainer" id="contact">
+        <h1>Contact</h1>
+      </div>
+    </Element>
   );
 }

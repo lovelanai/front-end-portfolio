@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { CSSProperties, useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import "./Header.css";
 
 export default function Header() {
@@ -24,24 +25,59 @@ export default function Header() {
     <div className="headerContainer">
       <div id="headerColors" className={header}>
         <div>
-          <button>
-            <a href="#start">Logo</a>
-          </button>
+          <Link
+            className="headerBtn"
+            to="start"
+            spy={true}
+            smooth={true}
+            duration={200}
+          >
+            Logo
+          </Link>
         </div>
         <div>
           <ul>
-            <button>
-              <a href="#start">Home</a>
-            </button>
-            <button>
-              <a href="#about">About</a>
-            </button>
-            <button>
-              <a href="#portfolio">Portfolio</a>
-            </button>
-            <button>
-              <a href="#contact">Contact</a>
-            </button>
+            <Link
+              activeClass="current"
+              className="headerBtn"
+              to="start"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
+              Home
+            </Link>
+            <Link
+              activeClass="current"
+              className="headerBtn"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
+              About
+            </Link>
+
+            <Link
+              activeClass="current"
+              className="headerBtn"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
+              Portfolio
+            </Link>
+            <Link
+              activeClass="current"
+              className="headerBtn"
+              to="Contact"
+              spy={true}
+              smooth={true}
+              duration={200}
+            >
+              Contact
+            </Link>
           </ul>
         </div>
       </div>

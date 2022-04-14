@@ -6,7 +6,7 @@ import TextAnimation from "./TextAnimation";
 
 export default function FrontPage() {
   return (
-    <div className="frontPageContainer">
+    <div className="frontPageContainer" id="start">
       <div className="nameContainer">
         <div className="nameContent">
           <span>Love Lanai</span>

@@ -13,12 +13,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   max-width: 1200px;
   min-width: 75%;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
 }
 
-.headerContent button {
+.headerTransparent {
+  background-color: transparent;
+}
+
+.headerDark {
+  animation: darken 0.5s ease-in forwards;
+}
+
+.headerContainer button {
   margin: 0 1rem;
   background: none;
   border: none;
@@ -30,4 +39,27 @@
 
 .headerContent button:hover {
   transform: scale(1.1);
+}
+
+.headerContentDark button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes darken {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes transparent {
+  0% {
+    background-color: rgb(0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
 }

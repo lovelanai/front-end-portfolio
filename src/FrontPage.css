@@ -49,6 +49,7 @@
 
 .location {
   display: flex;
+  color: rgb(255, 240, 185);
 }
 
 .nameContent .icon {

@@ -1,4 +1,56 @@
 .contactContainer {
-  height: 100vh;
-  background-color: rgb(154, 255, 144);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}
+
+.contactContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contactForm {
+  margin-right: 4rem;
+  font-size: 2rem;
+}
+.contactFunction {
+  color: white;
+}
+
+.contactFunction p:first-child {
+  color: #55bfcb;
+}
+
+.contactFunction span:first-child {
+  color: #82bc2b;
+}
+
+.contactFunction span:nth-child(2) {
+  color: white;
+}
+.contactFunction span:nth-child(3) {
+  color: #d4255c;
+}
+
+.contactFunction span:nth-child(4) {
+  color: #d4255c;
+}
+
+.contactFunction span:nth-child(5) {
+  color: #eba34f;
+}
+
+.contactFunction span:nth-child(6) {
+  color: #d4255c;
+}
+
+.contactElse span:first-child {
+  color: #d4255c;
 }

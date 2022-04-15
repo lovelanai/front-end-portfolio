@@ -1,4 +1,49 @@
 .portfolioContainer {
   height: 100vh;
-  background-color: rgb(253, 144, 144);
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolioContent {
+  border: 2px solid black;
+  height: 35rem;
+  width: 65rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolio__labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  width: 60%;
+}
+
+.portfolio__labels a {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.portfolio__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+}
+.portfolio__container span {
+  border: 1px solid #333;
+  padding: 20px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.3rem;
 }

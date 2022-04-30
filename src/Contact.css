@@ -5,7 +5,9 @@
   min-height: 100vh;
   min-width: 100vw;
   flex-direction: column;
-  background-color: black;
+  /* background-color: #162c35; */
+  background-image: url("./assets/img/code.png");
+  background-size: cover;
   color: white;
 }
 
@@ -25,32 +27,99 @@
 }
 
 .contactFunction p:first-child {
-  color: #55bfcb;
+  color: #ce91c8;
 }
 
 .contactFunction span:first-child {
-  color: #82bc2b;
+  color: #559bd1;
 }
 
 .contactFunction span:nth-child(2) {
-  color: white;
+  color: #37b6b4;
 }
 .contactFunction span:nth-child(3) {
-  color: #d4255c;
+  color: #ce91c8;
 }
 
 .contactFunction span:nth-child(4) {
-  color: #d4255c;
+  color: #37b6b4;
 }
 
 .contactFunction span:nth-child(5) {
-  color: #eba34f;
+  color: #ff8a47;
 }
 
 .contactFunction span:nth-child(6) {
-  color: #d4255c;
+  color: #ff8a47;
 }
 
-.contactElse span:first-child {
-  color: #d4255c;
+.contactFunction span:nth-child(7) {
+  color: #37b6b4;
+}
+
+.contactFunction span:nth-child(8) {
+  color: #37b6b4;
+}
+
+.contactFunction span:nth-child(9) {
+  color: #ff8a47;
+}
+.contactFunction span:nth-child(10) {
+  color: #ff8a47;
+}
+
+.contactFunction span:nth-child(11) {
+  color: #37b6b4;
+}
+
+.contactFunction span:nth-child(12) {
+  color: #37b6b4;
+}
+.contactFunction span:nth-child(13) {
+  color: #ff8a47;
+}
+.contactFunction span:nth-child(14) {
+  color: #37b6b4;
+}
+
+.contactElse span:nth-child(1) {
+  color: #37b6b4;
+}
+
+.contactElse span:nth-child(2) {
+  color: #ce91c8;
+}
+
+.elseForm span:nth-child(1) {
+  color: #37b6b4;
+}
+
+.elseForm span:nth-child(2) {
+  color: #ff8a47;
+}
+
+.elseForm span:nth-child(3) {
+  color: #37b6b4;
+}
+
+.elseForm span:nth-child(4) {
+  color: #ff8a47;
+}
+
+.elseForm span:nth-child(5) {
+  color: #37b6b4;
+}
+
+.elseForm span:nth-child(6) {
+  color: #37b6b4;
+}
+.elseForm span:nth-child(7) {
+  color: #37b6b4;
+}
+.elseForm span:nth-child(8) {
+  color: #37b6b4;
+}
+
+.elseForm a {
+  color: #8cc98f;
 }

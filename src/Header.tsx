@@ -1,4 +1,4 @@
-import { CSSProperties, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import "./Header.css";
 

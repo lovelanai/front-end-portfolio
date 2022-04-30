@@ -8,20 +8,29 @@
 
 .portfolioContent {
   border: 2px solid black;
-  height: 35rem;
+  height: 45rem;
   width: 65rem;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+.content-box {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
 .portfolio__labels {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
-  width: 60%;
+
+  width: 100%;
+  background: white;
+  padding: 3rem 12rem;
+}
+.current {
+  text-decoration: underline;
 }
 
 .portfolio__labels a {
@@ -33,17 +42,53 @@
 
 .portfolio__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  width: 65%;
+  overflow-y: scroll;
 }
-.portfolio__container span {
-  border: 1px solid #333;
+.project {
   padding: 20px;
-  height: 80%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0.3rem;
+  flex-direction: column;
+}
+
+.project-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.linkIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2.5rem;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.project-image {
+  height: 15rem;
+}
+
+.project span {
+  font-size: 1.5rem;
+}
+
+.portfolio__container img {
+  height: 100%;
 }

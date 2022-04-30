@@ -1,31 +1,81 @@
 import { useState, useEffect } from "react";
 import { Element } from "react-scroll";
 import "./Portfolio.css";
+import kameraproffset from "./assets/img/kameraproffset.png";
+import store from "./assets/img/store.png";
+import bigmac from "./assets/img/bigmac.png";
+import resume from "./assets/img/resume.png";
+import asos from "./assets/img/asos.png";
+import cumpane from "./assets/img/cumpane.png";
+import travelsome from "./assets/img/travelsome.png";
+import obeseman from "./assets/img/obeseman.png";
+import { GoMarkGithub } from "react-icons/go";
+import { GoLink } from "react-icons/go";
 
 const portfolio = [
   {
-    name: "My best client",
+    name: "Travelsome",
+    category: ["all", "react", "javascript", "backend"],
+    image: travelsome,
+    description: "MongoDB, ExpressJS, React",
+    repo: "https://github.com/lovelanai/travelsome",
+    demo: "https://github.com/lovelanai/travelsome",
+  },
+  {
+    name: "Kameraproffset",
     category: ["all", "react", "typescript"],
+    image: kameraproffset,
+    description: "React, Typescript",
+    repo: "https://github.com/lovelanai/miniprojekt2-webbshop",
+    demo: "https://kameraproffset.netlify.app/",
   },
   {
-    name: "My favorite case",
-    category: ["all", "typescript", "javascript"],
+    name: "Store.se",
+    category: ["all", "react", "typescript"],
+    image: store,
+    description: "React, Typescript",
+    repo: "https://github.com/lovelanai/Store.se-webshop",
+    demo: "https://storese.netlify.app/",
   },
   {
-    name: "A old job",
-    category: ["all", "react"],
+    name: "BigMac Armageddon",
+    category: ["all", "typescript"],
+    image: bigmac,
+    description: "Typescript, Canvas, p5",
+    repo: "https://github.com/lovelanai/big-mac-armageddon",
+    demo: "https://bigmacarmageddon.netlify.app/",
   },
   {
-    name: "It is a really cool website",
-    category: ["all", "react", "javascript"],
+    name: "Interactive resume",
+    category: ["all", "html", "javascript"],
+    image: resume,
+    description: "Html, Css, Javascript",
+    repo: "https://github.com/lovelanai/Interactive-resume",
+    demo: "https://lovelanai.github.io/Interactive-resume/",
   },
   {
-    name: "Obeseman",
-    category: ["all", "react", "javascript"],
+    name: "obeseman",
+    category: ["all", "html", "javascript"],
+    image: obeseman,
+    description: "Html, Css, Javacsript",
+    repo: "https://github.com/lovelanai/Obese-Man-Adventure",
+    demo: "https://lovelanai.github.io/Obese-Man-Adventure/",
   },
   {
-    name: "Something more",
-    category: ["all", "backend"],
+    name: "cumpane",
+    category: ["all", "html", "javascript"],
+    image: cumpane,
+    description: "Html, Css, Javascript",
+    repo: "https://github.com/lovelanai/Re-design-of-webshop",
+    demo: "https://lovelanai.github.io/Re-design-of-webshop/",
+  },
+  {
+    name: "Asos",
+    category: ["all", "html"],
+    image: asos,
+    description: "Html, Css",
+    repo: "https://github.com/lovelanai/ASOS.com-recreation",
+    demo: "https://lovelanai.github.io/ASOS.com-recreation/",
   },
 ];
 export default function Portfolio() {
@@ -69,6 +119,9 @@ export default function Portfolio() {
             >
               javascript
             </a>
+            <a active={filter === "html"} onClick={() => setFilter("html")}>
+              Html
+            </a>
             <a
               active={filter === "backend"}
               onClick={() => setFilter("backend")}
@@ -79,7 +132,28 @@ export default function Portfolio() {
           <div className="portfolio__container">
             {projects.map((item) =>
               item.filtered === true ? (
-                <span key={item.name}>{item.name}</span>
+                <div key={item.name} className="project">
+                  <div className="content-box">
+                    <div className="project-title">
+                      <span key={item.name}>{item.name}</span>
+                    </div>
+                    <div className="project-image">
+                      <img key={item.image} src={item.image}></img>
+                    </div>
+                    <div className="description">
+                      <p>Built with: {item.description}</p>
+                    </div>
+
+                    <div className="linkIcons">
+                      <a href={item.demo}>
+                        <GoLink />
+                      </a>
+                      <a href={item.repo}>
+                        <GoMarkGithub />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               ) : (
                 ""
               )

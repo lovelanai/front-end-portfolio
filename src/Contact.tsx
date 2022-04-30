@@ -1,22 +1,30 @@
 import { Element } from "react-scroll";
 import "./Contact.css";
 export default function Contact() {
-  const text1 = ` (Time > 01:00`;
+  const text1 = ` (Time `;
 
-  const text2 = `Time < 08:00){
-    
-    `;
+  const arrow = `> `;
+  const time1 = `01`;
+  const time12 = `00`;
+  const sleep = `
+  
+  LoveIsAsleep`;
+
+  const arrowfnc = ` = ()`;
+  const arrowfnc2 = ` =>`;
+  const text2 = `Time`;
+  const arrow2 = ` <`;
+  const time2 = ` 08`;
+  const time21 = `00`;
 
   const text3 = `
-} 
 
-{ `;
+} `;
 
   const text4 = `
-
 }`;
 
-  const text5 = `{`;
+  const text5 = ` {`;
 
   return (
     <Element name="Contact">
@@ -25,37 +33,48 @@ export default function Contact() {
           <pre className="contactForm">
             <code className="contactFunction">
               <p>
-                Function <span>ContactInfo</span>
-                <span>() {text5}</span>
+                const <span>ContactInfo</span>
+                <span>{arrowfnc}</span>
+                <span>{arrowfnc2}</span>
+                <span> {text5}</span>
               </p>
               <br />
               <span>If</span>
               {text1}
+              <span>{arrow}</span>
+              <span>{time1}</span>:<span>{time12}</span>
               <span> || </span>
               {text2}
-              LoveIsAsleep === <span>True</span>
+              <span>{arrow2}</span>
+              <span>{time2}</span>:<span>{time21}</span>)<span>{text5}</span>
+              {sleep} <span>===</span> <span>True</span> <span>;</span>
             </code>
             <code className="contactElse">
-              {text3}
+              <span>{text3}</span>
               <span>else</span>
+              <br />
+              <br />
             </code>
-            <code>
-              <p>Phone: 073-077 21 42;</p>
+            <code className="elseForm">
+              Phone <span>:</span> <span>073</span>
+              <span>-</span>
+              <span>077 21 42</span>
+              <span>;</span>
               <p>
-                Email:{" "}
+                Email<span>:</span>{" "}
                 <a href="mailto:love.lanai@medieinstitutet.se">
-                  love.lanai@medieinstitutet.se
+                  "love.lanai@medieinstitutet.se"
                 </a>
-                ;
+                <span>;</span>
               </p>
               <p>
-                Github:
+                Github<span>:</span>{" "}
                 <a href="https://github.com/lovelanai">
-                  https://github.com/lovelanai
+                  "https://github.com/lovelanai"
                 </a>
-                ;
+                <span>;</span>
               </p>
-              <p>{text4}</p>
+              <span>{text4}</span>
             </code>
           </pre>
         </div>

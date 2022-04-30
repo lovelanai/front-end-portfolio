@@ -1,8 +1,8 @@
 .headerContainer {
   position: fixed;
-
-  width: 100%;
   display: flex;
+  width: 100%;
+
   justify-content: center;
   align-items: center;
   z-index: 10;
@@ -50,5 +50,16 @@
 
   100% {
     background-color: black;
+  }
+}
+
+@media (max-width: 670px) {
+  .headerContent {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .header-desktop a {
+    font-size: 1rem;
   }
 }

@@ -100,7 +100,7 @@ export default function Portfolio() {
     <Element name="portfolio">
       <div className="portfolioContainer">
         <div className="portfolioContent">
-          <div className="portfolio__labels">
+          <div className="portfolio-labels">
             <a active={filter === "all"} onClick={() => setFilter("all")}>
               All
             </a>

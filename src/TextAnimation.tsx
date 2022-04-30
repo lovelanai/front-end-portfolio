@@ -25,9 +25,9 @@ class TextAnimation extends Component {
   render() {
     return (
       <React.Fragment>
-        <section>
+        <section className="textanimation">
           <ReactTextTransition
-            style={{ fontSize: "4.5rem", fontWeight: "800" }}
+            className="textanimation-text"
             text={texts[this.state.textIndex % texts.length]}
             springConfig={presets.wobbly}
             inline

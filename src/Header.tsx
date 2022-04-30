@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { DropdownButton, Dropdown } from "react-bootstrap";
 import { Link } from "react-scroll";
 import "./Header.css";
 
@@ -24,18 +25,17 @@ export default function Header() {
   return (
     <div className="headerContainer">
       <div id="headerColors" className={header}>
-        <div>
-          <Link
-            className="headerBtn"
-            to="start"
-            spy={true}
-            smooth={true}
-            duration={200}
-          >
-            Logo
-          </Link>
-        </div>
-        <div>
+        <Link
+          className="headerBtn"
+          to="start"
+          spy={true}
+          smooth={true}
+          duration={200}
+        >
+          Logo
+        </Link>
+
+        <div className="header-desktop">
           <ul>
             <Link
               activeClass="current"

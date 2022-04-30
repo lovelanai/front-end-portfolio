@@ -54,9 +54,26 @@
 
 .nameContent .icon {
   font-size: 3rem;
-  margin-left: 1rem;
 }
 
 .particlesLayout {
   z-index: 1;
+}
+.textanimation-text {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+.textMobile {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .textanimation {
+    display: none;
+  }
+
+  .textMobile {
+    display: flex;
+    font-size: 3rem;
+  }
 }

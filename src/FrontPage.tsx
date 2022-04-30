@@ -12,9 +12,19 @@ export default function FrontPage() {
           <div className="nameContent">
             <span>Love Lanai</span>
             <TextAnimation />
+            <h1 className="textMobile">Front End Developer</h1>
             <div className="location">
-              <h1> Gothenburg, Sweden</h1>
-              <HiOutlineLocationMarker className="icon" /> {"  "}
+              <h1
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                {" "}
+                Gothenburg, Sweden <HiOutlineLocationMarker className="icon" />{" "}
+                {"  "}
+              </h1>
             </div>
             <div className="portfolioBtnWrapper">
               <Link

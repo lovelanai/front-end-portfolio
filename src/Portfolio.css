@@ -9,10 +9,12 @@
 .portfolioContent {
   border: 2px solid black;
   height: 45rem;
-  width: 65rem;
+  max-width: 65rem;
+  min-width: 20rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0 1rem;
 }
 
 .content-box {
@@ -20,7 +22,7 @@
   padding: 1rem;
 }
 
-.portfolio__labels {
+.portfolio-labels {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,7 +35,7 @@
   text-decoration: underline;
 }
 
-.portfolio__labels a {
+.portfolio-labels a {
   cursor: pointer;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -91,4 +93,22 @@
 
 .portfolio__container img {
   height: 100%;
+}
+
+@media (max-width: 1065px) {
+  .project-image {
+    height: 10rem;
+  }
+
+  .portfolio-labels {
+    padding: 3rem 5rem;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .portfolioContent {
+    display: none;
+  }
 }

@@ -16,6 +16,7 @@ export default function Header() {
   };
 
   useEffect(() => {
+    listenScrollEvent();
     window.addEventListener("scroll", listenScrollEvent);
 
     return () => window.removeEventListener("scroll", listenScrollEvent);

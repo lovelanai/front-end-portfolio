@@ -101,62 +101,20 @@ export default function Portfolio() {
       <div className="portfolioContainer">
         <div className="portfolioContent">
           <div className="portfolio-labels">
-            <a active={filter === "all"} onClick={() => setFilter("all")}>
-              All
-            </a>
-            <a active={filter === "react"} onClick={() => setFilter("react")}>
-              react
-            </a>
-            <a
-              active={filter === "typescript"}
-              onClick={() => setFilter("typescript")}
-            >
-              Typescript
-            </a>
-            <a
-              active={filter === "javascript"}
-              onClick={() => setFilter("javascript")}
-            >
-              javascript
-            </a>
-            <a active={filter === "html"} onClick={() => setFilter("html")}>
-              Html
-            </a>
-            <a
-              active={filter === "backend"}
-              onClick={() => setFilter("backend")}
-            >
-              Backend
-            </a>
+            <a onClick={() => setFilter("all")}>All</a>
+            <a onClick={() => setFilter("react")}>react</a>
+            <a onClick={() => setFilter("typescript")}>Typescript</a>
+            <a onClick={() => setFilter("javascript")}>javascript</a>
+            <a onClick={() => setFilter("html")}>Html</a>
+            <a onClick={() => setFilter("backend")}>Backend</a>
           </div>
           <div className="portfolio-labels-mobile">
-            <a active={filter === "all"} onClick={() => setFilter("all")}>
-              All
-            </a>
-            <a active={filter === "react"} onClick={() => setFilter("react")}>
-              react
-            </a>
-            <a
-              active={filter === "typescript"}
-              onClick={() => setFilter("typescript")}
-            >
-              Typescript
-            </a>
-            <a
-              active={filter === "javascript"}
-              onClick={() => setFilter("javascript")}
-            >
-              javascript
-            </a>
-            <a active={filter === "html"} onClick={() => setFilter("html")}>
-              Html
-            </a>
-            <a
-              active={filter === "backend"}
-              onClick={() => setFilter("backend")}
-            >
-              Backend
-            </a>
+            <a onClick={() => setFilter("all")}>All</a>
+            <a onClick={() => setFilter("react")}>react</a>
+            <a onClick={() => setFilter("typescript")}>Typescript</a>
+            <a onClick={() => setFilter("javascript")}>javascript</a>
+            <a onClick={() => setFilter("html")}>Html</a>
+            <a onClick={() => setFilter("backend")}>Backend</a>
           </div>
           <div className="portfolio__container">
             {projects.map((item) =>

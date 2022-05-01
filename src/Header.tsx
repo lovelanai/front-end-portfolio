@@ -19,7 +19,7 @@ export default function Header() {
     window.addEventListener("scroll", listenScrollEvent);
 
     return () => window.removeEventListener("scroll", listenScrollEvent);
-  }, []);
+  }, [listenScrollEvent]);
 
   return (
     <div className="headerContainer">

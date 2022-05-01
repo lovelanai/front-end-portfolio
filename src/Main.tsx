@@ -10,7 +10,6 @@ export default function Main() {
       <FrontPage />
       <About />
       <Portfolio />
-
       <Contact />
     </main>
   );

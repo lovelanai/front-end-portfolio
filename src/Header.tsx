@@ -7,14 +7,15 @@ export default function Header() {
 
   const height = window.innerHeight - 280;
 
+  const listenScrollEvent = () => {
+    if (window.scrollY < height) {
+      return setHeader("headerContent");
+    } else if (window.scrollY > height) {
+      return setHeader("headerContent headerDark");
+    }
+  };
+
   useEffect(() => {
-    const listenScrollEvent = () => {
-      if (window.scrollY < height) {
-        return setHeader("headerContent");
-      } else if (window.scrollY > height) {
-        return setHeader("headerContent headerDark");
-      }
-    };
     window.addEventListener("scroll", listenScrollEvent);
 
     return () => window.removeEventListener("scroll", listenScrollEvent);

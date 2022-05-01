@@ -101,20 +101,56 @@ export default function Portfolio() {
       <div className="portfolioContainer">
         <div className="portfolioContent">
           <div className="portfolio-labels">
-            <a onClick={() => setFilter("all")}>All</a>
-            <a onClick={() => setFilter("react")}>react</a>
-            <a onClick={() => setFilter("typescript")}>Typescript</a>
-            <a onClick={() => setFilter("javascript")}>javascript</a>
-            <a onClick={() => setFilter("html")}>Html</a>
-            <a onClick={() => setFilter("backend")}>Backend</a>
+            <a href="/#portfolio/#all" onClick={() => setFilter("all")}>
+              All
+            </a>
+            <a href="#portfolio/#react" onClick={() => setFilter("react")}>
+              react
+            </a>
+            <a
+              href="#portfolio/#typescript"
+              onClick={() => setFilter("typescript")}
+            >
+              Typescript
+            </a>
+            <a
+              href="#portfolio/#javascript"
+              onClick={() => setFilter("javascript")}
+            >
+              javascript
+            </a>
+            <a href="#portfolio/#html" onClick={() => setFilter("html")}>
+              Html
+            </a>
+            <a href="#portfolio/#backend" onClick={() => setFilter("backend")}>
+              Backend
+            </a>
           </div>
           <div className="portfolio-labels-mobile">
-            <a onClick={() => setFilter("all")}>All</a>
-            <a onClick={() => setFilter("react")}>react</a>
-            <a onClick={() => setFilter("typescript")}>Typescript</a>
-            <a onClick={() => setFilter("javascript")}>javascript</a>
-            <a onClick={() => setFilter("html")}>Html</a>
-            <a onClick={() => setFilter("backend")}>Backend</a>
+            <a href="#portfolio/#all" onClick={() => setFilter("all")}>
+              All
+            </a>
+            <a href="#portfolio/#react" onClick={() => setFilter("react")}>
+              react
+            </a>
+            <a
+              href="#portfolio/#typescript"
+              onClick={() => setFilter("typescript")}
+            >
+              Typescript
+            </a>
+            <a
+              href="#portfolio/#javascript"
+              onClick={() => setFilter("javascript")}
+            >
+              javascript
+            </a>
+            <a href="#portfolio/#html" onClick={() => setFilter("html")}>
+              Html
+            </a>
+            <a href="#portfolio/#backend" onClick={() => setFilter("backend")}>
+              Backend
+            </a>
           </div>
           <div className="portfolio__container">
             {projects.map((item) =>

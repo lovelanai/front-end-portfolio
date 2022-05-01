@@ -17,7 +17,7 @@
   z-index: 9;
 }
 
-.nameContent span {
+.nameTitle {
   -webkit-text-stroke: 2px #fff;
   font-size: 5rem;
   color: transparent;
@@ -74,6 +74,32 @@
 
   .textMobile {
     display: flex;
+  }
+
+  .textMobile span {
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 500px) {
+  .textMobile span {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+
+    font-weight: 500;
+  }
+
+  .location h1 {
+    font-size: 1rem;
+  }
+
+  .nameContent .icon {
+    display: none;
+  }
+
+  .nameTitle {
     font-size: 3rem;
   }
 }

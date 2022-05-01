@@ -10,7 +10,9 @@ export default function Main() {
       <FrontPage />
       <About />
       <Portfolio />
-      <Contact />
+      <div style={{ display: "none" }}>
+        <Contact />
+      </div>
     </main>
   );
 }

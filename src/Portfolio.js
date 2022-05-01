@@ -129,6 +129,35 @@ export default function Portfolio() {
               Backend
             </a>
           </div>
+          <div className="portfolio-labels-mobile">
+            <a active={filter === "all"} onClick={() => setFilter("all")}>
+              All
+            </a>
+            <a active={filter === "react"} onClick={() => setFilter("react")}>
+              react
+            </a>
+            <a
+              active={filter === "typescript"}
+              onClick={() => setFilter("typescript")}
+            >
+              Typescript
+            </a>
+            <a
+              active={filter === "javascript"}
+              onClick={() => setFilter("javascript")}
+            >
+              javascript
+            </a>
+            <a active={filter === "html"} onClick={() => setFilter("html")}>
+              Html
+            </a>
+            <a
+              active={filter === "backend"}
+              onClick={() => setFilter("backend")}
+            >
+              Backend
+            </a>
+          </div>
           <div className="portfolio__container">
             {projects.map((item) =>
               item.filtered === true ? (
@@ -158,6 +187,33 @@ export default function Portfolio() {
                 ""
               )
             )}
+          </div>
+
+          <div className="portfolio__container-mobile">
+            {projects.map((item) => (
+              <div key={item.name} className="project">
+                <div className="content-box">
+                  <div className="project-title">
+                    <span key={item.name}>{item.name}</span>
+                  </div>
+                  <div className="project-image">
+                    <img key={item.image} src={item.image}></img>
+                  </div>
+                  <div className="description">
+                    <p>Built with: {item.description}</p>
+                  </div>
+
+                  <div className="linkIcons">
+                    <a href={item.demo}>
+                      <GoLink />
+                    </a>
+                    <a href={item.repo}>
+                      <GoMarkGithub />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -19,3 +19,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.headerMobile {
+  display: none;
+}
+
+@media (max-width: 660px) {
+  .headerDesktop {
+    display: none;
+  }
+}

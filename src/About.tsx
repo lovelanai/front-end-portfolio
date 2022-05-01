@@ -16,16 +16,21 @@ export default function About() {
               </section>
               <section>
                 <h2>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolore,
+                  I'm currently a front-end-developer student at Medieinstitutet
                 </h2>
               </section>
               <section>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  consequatur a autem esse suscipit quae vel quaerat maxime
-                  dolore eos voluptate earum, iste possimus. Ad necessitatibus
-                  porro magni vitae odit.
+                  I'm a upcoming Front End developer based in Gothenburg. I
+                  would describe myselt as a creative developer with a good eye
+                  for problemsolving. I´ve been working mostly on client-side
+                  coding, but have recently dipped a toe into backend-coding
+                  such as ExpressJS and MongoDB.
+                </p>
+                <br />
+                <p>
+                  Besides coding I feed my creative side by playing & producing
+                  music. and from my job, I I always
                 </p>
               </section>
 

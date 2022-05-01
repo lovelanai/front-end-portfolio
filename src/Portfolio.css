@@ -1,20 +1,21 @@
 .portfolioContainer {
-  height: 100vh;
+  height: 100%;
   background-color: #f9f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
 }
 
 .portfolioContent {
   border: 2px solid black;
-  height: 45rem;
+  height: 39rem;
   max-width: 65rem;
   min-width: 20rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 1rem;
+  margin-top: 8rem;
 }
 
 .content-box {

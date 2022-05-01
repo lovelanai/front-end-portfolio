@@ -6,9 +6,9 @@
   scroll-behavior: smooth;
 }
 
-*::-webkit-scrollbar {
+/* *::-webkit-scrollbar {
   display: none;
-}
+} */
 
 body {
   background-attachment: fixed;

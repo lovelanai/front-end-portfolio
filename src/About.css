@@ -11,6 +11,7 @@
   width: 80rem;
   display: flex;
   justify-content: space-around;
+  margin-top: 4rem;
 }
 
 .aboutContent .left {
@@ -90,6 +91,11 @@
 }
 
 @media (max-width: 850px) {
+  .aboutContainer {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
   .aboutContent {
     height: 100%;
     width: 80rem;
@@ -97,6 +103,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-top: 3rem;
   }
 
   .aboutContent .left {

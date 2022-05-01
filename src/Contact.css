@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  margin-top: 6rem;
 }
 
 .contactForm {
@@ -136,6 +137,10 @@
   .contactForm {
     margin: 3rem;
     font-size: 1.2rem;
+  }
+
+  .contactContent {
+    margin-top: 0;
   }
 }
 

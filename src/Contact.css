@@ -2,10 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
   min-width: 100vw;
-  flex-direction: column;
-  /* background-color: #162c35; */
+
   background-image: url("./assets/img/code.png");
   background-size: cover;
   color: white;
@@ -19,7 +18,6 @@
 }
 
 .contactForm {
-  margin-right: 4rem;
   font-size: 2rem;
 }
 .contactFunction {
@@ -124,8 +122,32 @@
   color: #8cc98f;
 }
 
-@media (max-width: 700px) {
-  .contactContent {
-    display: none;
+@media (max-width: 910px) {
+  .contactForm {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .contactContainer {
+    height: 100%;
+  }
+
+  .contactForm {
+    margin: 3rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .contactForm {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .contactForm {
+    margin: 2rem;
+    font-size: 0.8rem;
   }
 }

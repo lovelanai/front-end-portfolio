@@ -3,7 +3,7 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { Element, Link } from "react-scroll";
 import "./FrontPage.css";
 import TextAnimation from "./TextAnimation";
-import { Typewriter } from "react-simple-typewriter";
+import TypeWriter from "./Typewriter";
 
 export default function FrontPage() {
   return (
@@ -14,19 +14,7 @@ export default function FrontPage() {
             <span className="nameTitle">Love Lanai</span>
             <TextAnimation />
             <div className="textMobile">
-              <Typewriter
-                words={[
-                  " Front end developer",
-                  " Digital Designer",
-                  " Musician",
-                ]}
-                cursor
-                loop={false}
-                cursorStyle="|"
-                typeSpeed={50}
-                deleteSpeed={50}
-                delaySpeed={1000}
-              ></Typewriter>
+              <TypeWriter />
             </div>
 
             <div className="location">

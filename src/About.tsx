@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import "./About.css";
-
+import { AiFillLinkedin } from "react-icons/ai";
 export default function About() {
   return (
     <Element name="about">
@@ -35,7 +35,12 @@ export default function About() {
               </section>
 
               <section>
-                <button className="cvButton">Download CV</button>
+                <a href="https://www.linkedin.com/in/love-lanai/">
+                  <button className="cvButton">
+                    To Linked
+                    <AiFillLinkedin style={{ fontSize: "3rem" }} />
+                  </button>
+                </a>
               </section>
             </div>
           </div>

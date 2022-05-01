@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import "./Header.css";
-
+import { GoMarkGithub } from "react-icons/go";
 export default function Header() {
   const [header, setHeader] = useState("headerContent");
 
@@ -24,15 +24,14 @@ export default function Header() {
   return (
     <div className="headerContainer">
       <div id="headerColors" className={header}>
-        <Link
+        <a
+          style={{ display: "flex", alignItems: "center" }}
           className="headerBtn"
-          to="start"
-          spy={true}
-          smooth={true}
-          duration={200}
+          href="https://github.com/lovelanai"
         >
-          Logo
-        </Link>
+          Github{" "}
+          <GoMarkGithub style={{ fontSize: "2.5rem", marginLeft: "1rem" }} />
+        </a>
 
         <div className="header-desktop">
           <ul>

@@ -1,4 +1,5 @@
 import ParticlesBg from "particles-bg";
+import { GoMarkGithub } from "react-icons/go";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { Element, Link } from "react-scroll";
 import "./FrontPage.css";
@@ -30,7 +31,7 @@ export default function FrontPage() {
                 {"  "}
               </h1>
             </div>
-            <div className="portfolioBtnWrapper">
+            <div className="portfolioBtnWrapper" id="portfolioBtnDesktop">
               <Link
                 className="portfolioBtn"
                 to="portfolio"
@@ -40,6 +41,15 @@ export default function FrontPage() {
               >
                 To Portfolio
               </Link>
+            </div>
+            <div className="portfolioBtnWrapper" id="githubBtnMobile">
+              <a
+                style={{ fontSize: "2rem" }}
+                className="portfoliobtn"
+                href="https://github.com/lovelanai"
+              >
+                Github <GoMarkGithub />
+              </a>
             </div>
           </div>
         </div>

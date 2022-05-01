@@ -66,6 +66,30 @@
 .textMobile {
   display: none;
 }
+#githubBtnMobile {
+  display: none;
+}
+
+@media (max-width: 660px) {
+  #portfolioBtnDesktop {
+    display: none;
+  }
+
+  #githubBtnMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #githubBtnMobile a {
+    display: flex;
+    align-items: center;
+  }
+
+  #githubBtnMobile svg {
+    margin-left: 1rem;
+  }
+}
 
 @media (max-width: 950px) {
   .textanimation {

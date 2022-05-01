@@ -54,7 +54,7 @@ const portfolio = [
     demo: "https://lovelanai.github.io/Interactive-resume/",
   },
   {
-    name: "obeseman",
+    name: "Obeseman Adventure IV",
     category: ["all", "html", "javascript"],
     image: obeseman,
     description: "Html, Css, Javacsript",
@@ -62,7 +62,7 @@ const portfolio = [
     demo: "https://lovelanai.github.io/Obese-Man-Adventure/",
   },
   {
-    name: "cumpane",
+    name: "Cumpane Re-design",
     category: ["all", "html", "javascript"],
     image: cumpane,
     description: "Html, Css, Javascript",
@@ -70,7 +70,7 @@ const portfolio = [
     demo: "https://lovelanai.github.io/Re-design-of-webshop/",
   },
   {
-    name: "Asos",
+    name: "Asos Remake",
     category: ["all", "html"],
     image: asos,
     description: "Html, Css",

@@ -32,6 +32,11 @@
   padding: 3rem 12rem;
 }
 
+.portfolio-labels a:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
 .portfolio-labels a {
   cursor: pointer;
   text-transform: uppercase;
@@ -76,6 +81,11 @@
   font-size: 2.5rem;
 }
 
+.linkIcons a:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
 .description {
   width: 100%;
   display: flex;
@@ -101,6 +111,11 @@
 
 .portfolio-labels-mobile {
   display: none;
+}
+
+.portfolio-labels-mobile a:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
 }
 
 @media (max-width: 1065px) {

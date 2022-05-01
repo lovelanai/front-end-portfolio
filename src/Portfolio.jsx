@@ -125,7 +125,11 @@ export default function Portfolio() {
                       <span key={item.name}>{item.name}</span>
                     </div>
                     <div className="project-image">
-                      <img key={item.image} src={item.image}></img>
+                      <img
+                        alt="Project-image"
+                        key={item.image}
+                        src={item.image}
+                      ></img>
                     </div>
                     <div className="description">
                       <p>Built with: {item.description}</p>
@@ -155,7 +159,11 @@ export default function Portfolio() {
                     <span key={item.name}>{item.name}</span>
                   </div>
                   <div className="project-image">
-                    <img key={item.image} src={item.image}></img>
+                    <img
+                      alt="project-image"
+                      key={item.image}
+                      src={item.image}
+                    ></img>
                   </div>
                   <div className="description">
                     <p>Built with: {item.description}</p>
